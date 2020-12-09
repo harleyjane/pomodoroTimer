@@ -2,13 +2,12 @@ html {
   background-color: gray;
   text-align: center;
   min-width: 350px;
-  @import url(https://fonts.googleapis.com/css?family=Noto+Sans") rel="stylesheet"
-  font-family: 'Noto Sans', sans-serif;
+  @import url(https://fonts.googleapis.com/css?family=Noto+Sans); 
 }
 
 h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: lighter;
   padding: 0px;
   margin: 0px 10px;
@@ -40,7 +39,7 @@ h1 {
 
 .timerDisplay {
   color: #fff;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: bold;
   position: absolute;
   top: 60%;
@@ -82,7 +81,7 @@ h1 {
 
 .settings {
   margin: auto;
-  width: 80%;
+  width: 50%;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
@@ -94,7 +93,6 @@ h1 {
   height: 80px;
   background: #074082;
   transform: translate(0%, 50%);
-  
 }
 
 #work, #break {
@@ -106,52 +104,43 @@ h1 {
   color: black;
   background: #efc4c4;
   padding: 5px;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .buttoncalc {
-
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
   position: absolute;
-  bottom: 5%;
-  left: 46%;
+  bottom: 4%;
+  left: 46.5%;
+  text-align: center;
   padding: 9px 9px;
-  border: 1px solid #2347c1;
+  border: 1px solid #ffffff;
   border-radius: 8px;
-  background: #074082;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4285ff), to(#2347c1));
-  background: -moz-linear-gradient(top, #4285ff, #2347c1);
-  background: linear-gradient(to bottom, #4285ff, #2347c1);
-  -webkit-box-shadow: #4fa0ff -1px 0px 0px 0px;
-  -moz-box-shadow: #4fa0ff -1px 0px 0px 0px;
-  box-shadow: #4fa0ff -1px 0px 0px 0px;
+  background: #084082;
   text-shadow: #152a72 1px 1px 1px;
   font: normal normal bold 11px verdana;
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase
-  
-  
+  text-transform: uppercase;
+  transform: translate(0%, 50%);
 }
+
 .button:hover {
-  border: 1px solid ##2953e3;
+  border: 1px solid #2953e3;
   background: #4fa0ff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4fa0ff), to(#2a55e8));
-  background: -moz-linear-gradient(top, #4fa0ff, #2a55e8);
-  background: linear-gradient(to bottom, #4fa0ff, #2a55e8);
+  background: linear-gradient(#4fa0ff, #2a55e8);
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase
 }
+
 .button:active {
   background: #2347c1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2347c1), to(#2347c1));
-  background: -moz-linear-gradient(top, #2347c1, #2347c1);
+  background: linear-gradient(to left top, left bottom, from(#2347c1), to(#2347c1));
+  background: linear-gradient(top, #2347c1, #2347c1);
   background: linear-gradient(to bottom, #2347c1, #2347c1);
   text-transform: uppercase
 }
+
 .button:focus {
   text-transform: uppercase
 }
@@ -160,5 +149,5 @@ h1 {
 @media only screen and (max-width: 400px) {
   .timerDisplay {
   font-size: 2.5em;
-  }
+}
 }
